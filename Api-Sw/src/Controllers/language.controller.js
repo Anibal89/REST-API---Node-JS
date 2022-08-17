@@ -1,4 +1,4 @@
-import { getConnection } from "./../database/database";
+import { getConnection } from "./../database/database"; // importacion de conexion a la base de datos
 
 //Consultar Todos los datos :) 
 
@@ -15,7 +15,7 @@ const getUsers = async(req, res) => {
 
 };
 
-// Consultar un Dato :) */
+// Consultar un Dato :) 
 
 const getUser = async(req, res) => {
 
@@ -31,10 +31,11 @@ const getUser = async(req, res) => {
 
 };
 
+// Agregar un Registro  
+
 const addUser = async(req, res) => {
 
     try {
-        
         const {Nombre_Pila, Nombre_Usuario, Apellido_Usuario, Contraseña_Usuario, Id_Rol, Estado_Usuario, Edad_Usuario} = req.body;
         if(Nombre_Pila ==undefined || Nombre_Usuario == undefined || Apellido_Usuario == undefined || Contraseña_Usuario == undefined || Id_Rol == undefined || Estado_Usuario == undefined || Edad_Usuario == undefined)
         {
@@ -51,7 +52,7 @@ const addUser = async(req, res) => {
 
 };
 
-//Eliminar un Dato
+//Eliminar un Registro
 
 const deleteUser = async(req, res) => {
 
@@ -67,7 +68,7 @@ const deleteUser = async(req, res) => {
 
 };
 
-// Actualizar un Dato
+// Actualizar un Registro
 
 const updateUser = async(req, res) => {
 
@@ -92,8 +93,6 @@ const updateUser = async(req, res) => {
 
 // Consultar Rol de usuario
 
-
-
 const getUserAdmin = async(req, res) => {
 
     try {
@@ -107,9 +106,6 @@ const getUserAdmin = async(req, res) => {
     }
 
 };
-
-// Agregar un Dato  
-
 
 // Exportacion  de Methos de API - Rest 
 

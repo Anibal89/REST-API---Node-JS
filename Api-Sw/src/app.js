@@ -16,7 +16,7 @@ app.set("port",4000);
 app.use(morgan("dev"));
 app.use(express.json());
 
-//Routes
+//Routes del Api
 
 app.use("/api/usuario",LanguageRoutes);
 
