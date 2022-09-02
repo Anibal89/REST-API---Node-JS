@@ -7,7 +7,7 @@ import LanguageRoutes from "./routes/language.routes";
 
 const app=express();
 
-//configuraciones ----- :)
+//configuraciones ----- :) ":"
 
 app.set("port",4000);
 
